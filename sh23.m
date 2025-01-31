@@ -1,0 +1,14 @@
+clc
+clear
+[x,y]=meshgrid(-1:0.1:1);
+z=(x.^2+y.^2);
+subplot(2,1,1)
+surf(x,y,z)
+colorbar
+xlabel('x')
+ylabel('y')
+zlabel('z')
+title('z=x^2+y^2')
+subplot(2,1,2)
+mesh(x,y,z)
+colorbar
